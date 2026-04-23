@@ -1,6 +1,6 @@
 {
 
-  description = "Thattemperature's expunges overlays";
+  description = "Thattemperature's nixpkgs overlays";
 
   outputs =
     { self, ... }:
