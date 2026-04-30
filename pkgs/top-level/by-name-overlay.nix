@@ -20,5 +20,5 @@ let
 in
 
 super.lib.mapAttrs (
-  name: file: if builtins.hasAttr name super then super.name else self.callPackage file { }
+  name: file: if builtins.hasAttr name super then super."${name}" else self.callPackage file { }
 ) packageFiles

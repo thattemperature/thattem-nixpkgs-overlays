@@ -17,7 +17,7 @@ self: super: {
       in
 
       super.lib.mapAttrs (
-        name: package: if builtins.hasAttr name esuper then esuper.name else package
+        name: package: if builtins.hasAttr name esuper then esuper."${name}" else package
       ) thattemPackages
       // {
         inherit thattemPackages;
