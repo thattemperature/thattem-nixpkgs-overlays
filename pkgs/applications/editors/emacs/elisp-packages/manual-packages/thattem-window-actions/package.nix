@@ -9,13 +9,13 @@
 melpaBuild {
 
   pname = "thattem-window-actions";
-  version = "0-unstable-2026-05-08";
+  version = "0-unstable-2026-05-09";
 
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-window-actions";
-    rev = "e46569551217b679648af043816ec0b7e1333873";
-    hash = "sha256-gvAfrX/3K0P2cfRAO8In6lga9wj0H1roivyt1xksDr8=";
+    rev = "8393801cfc68cb0cb7d33831967c1d844456d20c";
+    hash = "sha256-o0AnupH0vWSn+78rfB1ZzWC4FQL9Ilb1Pgi7YuVMJ3M=";
   };
 
   packageRequires = [

@@ -13,13 +13,13 @@
 melpaBuild {
 
   pname = "thattem-tab-bar";
-  version = "0-unstable-2026-05-07";
+  version = "0-unstable-2026-05-09";
 
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-tab-bar";
-    rev = "69f37f76dbb0bb58c2594a00c28f27ef9a50e3f8";
-    hash = "sha256-PzIIW75r/Uf0jgh6iXbp3xuu1DoVhV1R8qYndsOqBmA=";
+    rev = "416932fc84b6fbc6f091473d2b654fc8a6523e5d";
+    hash = "sha256-1Eyh0bbKyd9crrHJyroFnrRjxLpQRDoVnu1IKn+iIdw=";
   };
 
   packageRequires = [

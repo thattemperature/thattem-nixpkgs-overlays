@@ -18,8 +18,8 @@ melpaBuild {
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-mode-line";
-    rev = "bd797fc9586d6419d14eeb7a81fbdcfacb9d2248";
-    hash = "sha256-lIorG9XunLIKf1hVTdI+5npaB4+k7edwxhC1NgEnOTQ=";
+    rev = "457bc9fb2e97edabe7f73493c2f4dbd7f5a4debc";
+    hash = "sha256-8RLCOGN2NyNN1atQPejCPByo7TpYuHLebGkoMwqqdWE=";
   };
 
   packageRequires = [

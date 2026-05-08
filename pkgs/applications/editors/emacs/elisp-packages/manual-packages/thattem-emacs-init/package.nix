@@ -29,7 +29,6 @@
   rainbow-delimiters,
   rime,
   sdcv,
-  thattem-mode-line,
   thattem-modus-themes,
   thattem-tab-bar,
   thattem-window-actions,
@@ -49,13 +48,13 @@
 melpaBuild {
 
   pname = "thattem-emacs-init";
-  version = "0-unstable-2026-05-08";
+  version = "0-unstable-2026-05-09";
 
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-emacs-init";
-    rev = "dcb3c21acc3e1abd3fa1c0fccab32578851c9f15";
-    hash = "sha256-voXYMWpe7uo/F+odSNEI1ippi3le+e3umUQAJEPjflE=";
+    rev = "755304f722b9d4e9cf1056d382026a228848f926";
+    hash = "sha256-Dwl4S6XFlB/jkNY32mfV5k9b9v5GehC00dEiKDetP2Y=";
   };
 
   packageRequires = [
@@ -85,7 +84,6 @@ melpaBuild {
     rainbow-delimiters
     rime
     sdcv
-    thattem-mode-line
     thattem-modus-themes
     thattem-tab-bar
     thattem-window-actions
