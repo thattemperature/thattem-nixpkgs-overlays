@@ -32,6 +32,7 @@
   thattem-mode-line,
   thattem-modus-themes,
   thattem-tab-bar,
+  thattem-window-actions,
   tramp,
   treesit-auto,
   undo-tree,
@@ -48,13 +49,13 @@
 melpaBuild {
 
   pname = "thattem-emacs-init";
-  version = "0-unstable-2026-05-07";
+  version = "0-unstable-2026-05-08";
 
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-emacs-init";
-    rev = "06a5f02427fa5cb22ea0e17f29d8e1f534c9566e";
-    hash = "sha256-L/kAqZICMO55hF+CddzNrWGxbqTGqAJPu+IZLKp6tZI=";
+    rev = "dcb3c21acc3e1abd3fa1c0fccab32578851c9f15";
+    hash = "sha256-voXYMWpe7uo/F+odSNEI1ippi3le+e3umUQAJEPjflE=";
   };
 
   packageRequires = [
@@ -87,6 +88,7 @@ melpaBuild {
     thattem-mode-line
     thattem-modus-themes
     thattem-tab-bar
+    thattem-window-actions
     tramp
     treesit-auto
     treesit-grammars.with-all-grammars
