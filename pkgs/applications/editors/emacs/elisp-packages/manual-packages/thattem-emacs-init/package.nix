@@ -4,16 +4,15 @@
   fetchFromGitHub,
   # Emacs Dependencies
   agenix,
+  cape,
   colorful-mode,
-  company-posframe,
-  company-prescient,
   compile-multi-nerd-icons,
-  consult-company,
   consult-compile-multi,
   consult-eglot,
   consult-flyspell,
   consult-org-roam,
   consult-yasnippet,
+  corfu-prescient,
   envrc,
   fennel-mode,
   fish-completion,
@@ -48,27 +47,26 @@
 melpaBuild {
 
   pname = "thattem-emacs-init";
-  version = "0-unstable-2026-05-09";
+  version = "0-unstable-2026-05-10";
 
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-emacs-init";
-    rev = "755304f722b9d4e9cf1056d382026a228848f926";
-    hash = "sha256-Dwl4S6XFlB/jkNY32mfV5k9b9v5GehC00dEiKDetP2Y=";
+    rev = "9c1a31d8f144e51482206ce496fa23f01ec397ff";
+    hash = "sha256-DGfE7QU1+Mxzr0/tbk+kJxJFzvtF3VSwAyFa1Og598I=";
   };
 
   packageRequires = [
     agenix
+    cape
     colorful-mode
-    company-posframe
-    company-prescient
     compile-multi-nerd-icons
-    consult-company
     consult-compile-multi
     consult-eglot
     consult-flyspell
     consult-org-roam
     consult-yasnippet
+    corfu-prescient
     envrc
     fennel-mode
     fish-completion
