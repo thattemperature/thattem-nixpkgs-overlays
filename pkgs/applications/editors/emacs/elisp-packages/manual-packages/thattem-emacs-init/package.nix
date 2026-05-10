@@ -8,11 +8,10 @@
   colorful-mode,
   compile-multi-nerd-icons,
   consult-compile-multi,
-  consult-eglot,
-  consult-flyspell,
   consult-org-roam,
   consult-yasnippet,
   corfu-prescient,
+  eglot,
   envrc,
   fennel-mode,
   fish-completion,
@@ -52,8 +51,8 @@ melpaBuild {
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-emacs-init";
-    rev = "9c1a31d8f144e51482206ce496fa23f01ec397ff";
-    hash = "sha256-DGfE7QU1+Mxzr0/tbk+kJxJFzvtF3VSwAyFa1Og598I=";
+    rev = "9efc47e5194e4b53ebd7175cd0c32dd40677a2ae";
+    hash = "sha256-Q2bRzka5AThvSo3T0oCTag6p+N/EM5CcjwmptSXT480=";
   };
 
   packageRequires = [
@@ -62,11 +61,10 @@ melpaBuild {
     colorful-mode
     compile-multi-nerd-icons
     consult-compile-multi
-    consult-eglot
-    consult-flyspell
     consult-org-roam
     consult-yasnippet
     corfu-prescient
+    eglot
     envrc
     fennel-mode
     fish-completion
