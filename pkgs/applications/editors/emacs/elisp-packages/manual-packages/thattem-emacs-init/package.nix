@@ -20,6 +20,7 @@
   haskell-ts-mode,
   kotlin-ts-mode,
   marginalia,
+  nerd-icons-corfu,
   nerd-icons-dired,
   nix-ts-mode,
   nixfmt,
@@ -51,8 +52,8 @@ melpaBuild {
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-emacs-init";
-    rev = "9efc47e5194e4b53ebd7175cd0c32dd40677a2ae";
-    hash = "sha256-Q2bRzka5AThvSo3T0oCTag6p+N/EM5CcjwmptSXT480=";
+    rev = "01d5478adadb63ee7ef8fc15fab2d72b09ee0c29";
+    hash = "sha256-LDMxEX36/+h3Mfn3Fv0TP27h7FzQkisKEu8GR781F2M=";
   };
 
   packageRequires = [
@@ -73,6 +74,7 @@ melpaBuild {
     haskell-ts-mode
     kotlin-ts-mode
     marginalia
+    nerd-icons-corfu
     nerd-icons-dired
     nix-ts-mode
     nixfmt
