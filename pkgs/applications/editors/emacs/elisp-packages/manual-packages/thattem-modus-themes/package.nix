@@ -10,13 +10,13 @@
 melpaBuild {
 
   pname = "thattem-modus-themes";
-  version = "0-unstable-2026-05-07";
+  version = "0-unstable-2026-05-11";
 
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-modus-themes";
-    rev = "11bb90949c8528168e5b808d22f3cd1221ad3511";
-    hash = "sha256-KQSCL2/cf0r37mPFOleAcb67QCtOfklmChjjoqsQAhI=";
+    rev = "f25a4f9655e32bcf13427588cfda824e7dea5446";
+    hash = "sha256-EiqYJW0VhwlFDm/UA7Yt2gegBJs5Po0gogA4Rot6wnA=";
   };
 
   packageRequires = [
