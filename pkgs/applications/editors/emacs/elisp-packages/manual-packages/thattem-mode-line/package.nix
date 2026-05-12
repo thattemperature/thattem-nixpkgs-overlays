@@ -3,7 +3,6 @@
   melpaBuild,
   fetchFromGitHub,
   # Dependencies
-  cond-let,
   dash,
   flymake,
   nerd-icons,
@@ -18,12 +17,11 @@ melpaBuild {
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-mode-line";
-    rev = "0cfd4517ff3eb8b1bfe065d34886454f553f6bac";
-    hash = "sha256-AEb7Xh7F6CwbPEogCEvN9nWlONKvXPvjT0X5lnT4pvM=";
+    rev = "79227f450ade326b69f18468fecb5c27fc20c706";
+    hash = "sha256-6vgKqK23NVrmDcrQVxsuH8shdImPvLFDTtArAd1VzDY=";
   };
 
   packageRequires = [
-    cond-let
     dash
     flymake
     nerd-icons
