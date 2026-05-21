@@ -9,9 +9,8 @@
   compile-multi-nerd-icons,
   consult-compile-multi,
   consult-org-roam,
-  consult-yasnippet,
   corfu-prescient,
-  eglot,
+  eglot-tempel,
   envrc,
   fennel-mode,
   fish-completion,
@@ -28,6 +27,7 @@
   rainbow-delimiters,
   rime,
   sdcv,
+  tempel-collection,
   thattem-modus-themes,
   thattem-tab-bar,
   thattem-window-actions,
@@ -37,7 +37,6 @@
   verilog-ts-mode,
   vertico-prescient,
   vhdl-ts-mode,
-  yasnippet-snippets,
   # Other Dependencies
   treesit-grammars,
   # Special
@@ -47,13 +46,13 @@
 melpaBuild {
 
   pname = "thattem-emacs-init";
-  version = "0-unstable-2026-05-21";
+  version = "0-unstable-2026-05-29";
 
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-emacs-init";
-    rev = "dbf889941d6226322d0e7872b7251acf281ed62d";
-    hash = "sha256-KFiQVPVNOq9gn5HTvuTBG1D7XDtDtPYm0ogtzSSRi7c=";
+    rev = "6f9d5ce8264a23024a546da0c218420bd539d93d";
+    hash = "sha256-LHH0eRp18HDQXTBdVmPYqrhycVFMSSwp4Z2k6NqdJa0=";
   };
 
   packageRequires = [
@@ -63,9 +62,8 @@ melpaBuild {
     compile-multi-nerd-icons
     consult-compile-multi
     consult-org-roam
-    consult-yasnippet
     corfu-prescient
-    eglot
+    eglot-tempel
     envrc
     fennel-mode
     fish-completion
@@ -82,6 +80,7 @@ melpaBuild {
     rainbow-delimiters
     rime
     sdcv
+    tempel-collection
     thattem-modus-themes
     thattem-tab-bar
     thattem-window-actions
@@ -92,7 +91,6 @@ melpaBuild {
     verilog-ts-mode
     vertico-prescient
     vhdl-ts-mode
-    yasnippet-snippets
   ];
 
   postPatch = ''
