@@ -47,13 +47,13 @@
 melpaBuild {
 
   pname = "thattem-emacs-init";
-  version = "0-unstable-2026-05-10";
+  version = "0-unstable-2026-05-21";
 
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-emacs-init";
-    rev = "01d5478adadb63ee7ef8fc15fab2d72b09ee0c29";
-    hash = "sha256-LDMxEX36/+h3Mfn3Fv0TP27h7FzQkisKEu8GR781F2M=";
+    rev = "dbf889941d6226322d0e7872b7251acf281ed62d";
+    hash = "sha256-KFiQVPVNOq9gn5HTvuTBG1D7XDtDtPYm0ogtzSSRi7c=";
   };
 
   packageRequires = [
