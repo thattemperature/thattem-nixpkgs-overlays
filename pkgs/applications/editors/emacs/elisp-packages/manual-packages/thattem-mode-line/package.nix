@@ -1,5 +1,6 @@
 {
   # Basic
+  lib,
   melpaBuild,
   fetchFromGitHub,
   # Dependencies
@@ -27,5 +28,12 @@ melpaBuild {
     nerd-icons
     projectile
   ];
+
+  meta = {
+    description = "Custom Emacs mode-line with project-aware segments and nerd-icons";
+    homepage = "https://github.com/thattemperature/thattem-mode-line";
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ thattemperature ];
+  };
 
 }

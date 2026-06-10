@@ -34,4 +34,11 @@ melpaBuild {
                      "\"${lib.getLib thattem-emacs-library}/lib/libthattem_emacs_library.so\""
   '';
 
+  meta = {
+    description = "Enhanced Emacs tab-bar with workspace management";
+    homepage = "https://github.com/thattemperature/thattem-tab-bar";
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ thattemperature ];
+  };
+
 }

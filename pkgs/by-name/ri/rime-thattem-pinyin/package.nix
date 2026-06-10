@@ -1,4 +1,5 @@
 {
+  lib,
   stdenvNoCC,
   fetchFromGitHub,
 }:
@@ -25,5 +26,12 @@ stdenvNoCC.mkDerivation {
 
     runHook postInstall
   '';
+
+  meta = {
+    description = "Thattemperature's Rime Pinyin input schema and dictionaries";
+    homepage = "https://github.com/thattemperature/rime-thattem-pinyin";
+    license = lib.licenses.mit;
+    maintainers = with lib.maintainers; [ thattemperature ];
+  };
 
 }

@@ -1,5 +1,6 @@
 {
   # Basic
+  lib,
   melpaBuild,
   fetchFromGitHub,
   # Dependencies
@@ -23,5 +24,12 @@ melpaBuild {
     cond-let
     thattem-mode-line
   ];
+
+  meta = {
+    description = "Emacs utility for window manipulation actions";
+    homepage = "https://github.com/thattemperature/thattem-window-actions";
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ thattemperature ];
+  };
 
 }
