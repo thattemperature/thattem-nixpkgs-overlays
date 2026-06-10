@@ -11,12 +11,12 @@
         default = import ./pkgs/top-level (
           with self.overlays;
           [
-            emacs-pakcages
+            emacs-packages
             by-name
           ]
         );
 
-        emacs-pakcages = import ./pkgs/top-level/emacs-packages-overlay.nix ./pkgs/applications/editors/emacs/elisp-packages/manual-packages.nix;
+        emacs-packages = import ./pkgs/top-level/emacs-packages-overlay.nix ./pkgs/applications/editors/emacs/elisp-packages/manual-packages.nix;
 
         by-name = import ./pkgs/top-level/by-name-overlay.nix ./pkgs/by-name;
 

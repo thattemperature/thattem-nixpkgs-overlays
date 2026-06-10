@@ -1,5 +1,6 @@
 {
   # Basic
+  lib,
   melpaBuild,
   fetchFromGitHub,
   # Emacs Dependencies
@@ -98,5 +99,12 @@ melpaBuild {
       --replace-fail ";;PLACEHOLDER:AUTH-SOURCE;;" \
                      "\"${special-auth-source}\""
   '';
+
+  meta = {
+    description = "Thattemperature's personal Emacs initialization configuration";
+    homepage = "https://github.com/thattemperature/thattem-emacs-init";
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ thattemperature ];
+  };
 
 }

@@ -1,5 +1,6 @@
 {
   # Basic
+  lib,
   stdenv,
   fetchFromGitHub,
   # Build system
@@ -35,5 +36,12 @@ stdenv.mkDerivation {
     libsysprof-capture
     pcre2
   ];
+
+  meta = {
+    description = "Native C library for thattemperature's Emacs helper functions";
+    homepage = "https://github.com/thattemperature/thattem-emacs-library";
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ thattemperature ];
+  };
 
 }

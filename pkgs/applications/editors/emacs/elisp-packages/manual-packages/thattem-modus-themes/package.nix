@@ -1,5 +1,6 @@
 {
   # Basic
+  lib,
   melpaBuild,
   fetchFromGitHub,
   # Dependencies
@@ -23,5 +24,12 @@ melpaBuild {
     dash
     modus-themes
   ];
+
+  meta = {
+    description = "Custom modus-themes variants with thattemperature's preferred palette";
+    homepage = "https://github.com/thattemperature/thattem-modus-themes";
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [ thattemperature ];
+  };
 
 }
