@@ -16,13 +16,13 @@
 stdenv.mkDerivation {
 
   pname = "thattem-emacs-library";
-  version = "0-unstable-2026-05-07";
+  version = "0-unstable-2026-07-03";
 
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-emacs-library";
-    rev = "37ff996a0ea26ee9ccf295f989e6c367dd6dba79";
-    hash = "sha256-ml9nHouAfgSEPSIDeOJcKdxha20h3w6a0blY9LuItWc=";
+    rev = "05248a9203f9803ea5f5cb1990d94fbcfedb03ee";
+    hash = "sha256-71xdWujMZmEa6VHDZIt5gw0DHSp/9weKWpUrouY0E30=";
   };
 
   nativeBuildInputs = [
