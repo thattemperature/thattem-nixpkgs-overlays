@@ -35,7 +35,9 @@ melpaBuild {
     description = "Enhanced Emacs tab-bar with workspace management";
     homepage = "https://github.com/thattemperature/thattem-tab-bar";
     license = lib.licenses.gpl3;
-    maintainers = with lib.maintainers; [ thattemperature ];
+    maintainers = with lib.maintainers; [
+      thattemperature
+    ];
   };
 
 }

@@ -104,7 +104,9 @@ melpaBuild {
     description = "Thattemperature's personal Emacs initialization configuration";
     homepage = "https://github.com/thattemperature/thattem-emacs-init";
     license = lib.licenses.gpl3;
-    maintainers = with lib.maintainers; [ thattemperature ];
+    maintainers = with lib.maintainers; [
+      thattemperature
+    ];
   };
 
 }

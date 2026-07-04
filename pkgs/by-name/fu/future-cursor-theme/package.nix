@@ -20,8 +20,8 @@ stdenvNoCC.mkDerivation {
     runHook preInstall
 
     DEST_DIR=$out/share/icons/Future-cursors
-    mkdir -p $DEST_DIR
-    cp -r dist/* $DEST_DIR
+    install -D dist/index.theme -t $DEST_DIR/
+    install -D dist/cursors/* -t $DEST_DIR/cursors/
 
     runHook postInstall
   '';

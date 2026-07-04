@@ -29,7 +29,9 @@ melpaBuild {
     description = "Emacs utility for window manipulation actions";
     homepage = "https://github.com/thattemperature/thattem-window-actions";
     license = lib.licenses.gpl3;
-    maintainers = with lib.maintainers; [ thattemperature ];
+    maintainers = with lib.maintainers; [
+      thattemperature
+    ];
   };
 
 }

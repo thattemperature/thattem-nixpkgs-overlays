@@ -30,8 +30,10 @@ stdenvNoCC.mkDerivation {
   meta = {
     description = "Thattemperature's Rime Pinyin input schema and dictionaries";
     homepage = "https://github.com/thattemperature/rime-thattem-pinyin";
-    license = lib.licenses.mit;
-    maintainers = with lib.maintainers; [ thattemperature ];
+    license = lib.licenses.gpl3;
+    maintainers = with lib.maintainers; [
+      thattemperature
+    ];
   };
 
 }

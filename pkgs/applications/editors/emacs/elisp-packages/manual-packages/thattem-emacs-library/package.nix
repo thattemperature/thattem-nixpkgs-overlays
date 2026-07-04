@@ -41,7 +41,9 @@ stdenv.mkDerivation {
     description = "Native C library for thattemperature's Emacs helper functions";
     homepage = "https://github.com/thattemperature/thattem-emacs-library";
     license = lib.licenses.gpl3;
-    maintainers = with lib.maintainers; [ thattemperature ];
+    maintainers = with lib.maintainers; [
+      thattemperature
+    ];
   };
 
 }
