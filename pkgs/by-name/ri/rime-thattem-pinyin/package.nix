@@ -7,13 +7,13 @@
 stdenvNoCC.mkDerivation {
 
   pname = "rime-thattem-pinyin";
-  version = "0-unstable-2026-05-10";
+  version = "0-unstable-2026-07-06";
 
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "rime-thattem-pinyin";
-    rev = "ef9f19baec90baa4f1a7eb4646505a24d05e3083";
-    hash = "sha256-rpGE71IhCna0U4xe8RzBLKocPeyczIyODVjKHD4XtEk=";
+    rev = "4af6584c34b147f227fd3fe28c7a95baabcae96a";
+    hash = "sha256-vX5w26m0AI01NfrZdwr96TrIT0uIMTvM3t3eRM6YbOM=";
   };
 
   installPhase = ''
@@ -21,7 +21,6 @@ stdenvNoCC.mkDerivation {
 
     install -D *.yaml -t $out/share/rime-data/
     install -D dicts/basic/*.yaml -t $out/share/rime-data/dicts/basic/
-    install -D dicts/english/*.yaml -t $out/share/rime-data/dicts/english/
     install -D dicts/japanese/*.yaml -t $out/share/rime-data/dicts/japanese/
 
     runHook postInstall
