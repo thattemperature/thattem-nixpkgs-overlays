@@ -7,13 +7,13 @@
 stdenvNoCC.mkDerivation {
 
   pname = "gnome-shell-extension-thattem-gnome-extension";
-  version = "0-unstable-2026-07-03";
+  version = "0-unstable-2026-07-31";
 
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-gnome-extension";
-    rev = "144ea5fe9b88818ebb142303fb9f72898834f0c4";
-    hash = "sha256-52TtFHa2y7SiMRWRoCPgpPXxPMIROnCMP+qjz3nqMlk=";
+    rev = "0dab7ebfa3cea903974d6da32cce603f24be65ed";
+    hash = "sha256-kGYo5EfFeCcx/7LyQI5WLrXIbAfQD3H0UMc7s6pYQ9g=";
   };
 
   installPhase = ''
