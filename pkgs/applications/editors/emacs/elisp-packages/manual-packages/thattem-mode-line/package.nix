@@ -4,7 +4,6 @@
   melpaBuild,
   fetchFromGitHub,
   # Dependencies
-  dash,
   flymake,
   nerd-icons,
   projectile,
@@ -13,17 +12,16 @@
 melpaBuild {
 
   pname = "thattem-mode-line";
-  version = "0-unstable-2026-05-17";
+  version = "0-unstable-2026-08-12";
 
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-mode-line";
-    rev = "75a50230f1929a97aeabfe6f3442a9cefe882317";
-    hash = "sha256-usT0NXSkT3L43AfNRvQIOp/0y64NB7+hIfBJRY5ouWk=";
+    rev = "47ad1dbd6645898c826d2040097675a7d84b2ca3";
+    hash = "sha256-aUvirESjjurJKHsDMdbjdmRei1Yb60O6Un1f+OcT/qA=";
   };
 
   packageRequires = [
-    dash
     flymake
     nerd-icons
     projectile
