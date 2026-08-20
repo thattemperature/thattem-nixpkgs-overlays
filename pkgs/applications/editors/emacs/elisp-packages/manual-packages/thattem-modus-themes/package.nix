@@ -4,24 +4,22 @@
   melpaBuild,
   fetchFromGitHub,
   # Dependencies
-  dash,
   modus-themes,
 }:
 
 melpaBuild {
 
   pname = "thattem-modus-themes";
-  version = "0-unstable-2026-05-11";
+  version = "0-unstable-2026-08-20";
 
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-modus-themes";
-    rev = "f25a4f9655e32bcf13427588cfda824e7dea5446";
-    hash = "sha256-EiqYJW0VhwlFDm/UA7Yt2gegBJs5Po0gogA4Rot6wnA=";
+    rev = "16ae8050d72f268b5025cdd31afa040f5dc15aba";
+    hash = "sha256-sZXSOG0/EcJcTakOwn+fbiH48V5/dXLplzzKgshAgZY=";
   };
 
   packageRequires = [
-    dash
     modus-themes
   ];
 
