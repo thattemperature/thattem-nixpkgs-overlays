@@ -33,11 +33,8 @@
   thattem-tab-bar,
   thattem-window-actions,
   tramp,
-  treesit-auto,
   undo-tree,
-  verilog-ts-mode,
   vertico-prescient,
-  vhdl-ts-mode,
   # Other Dependencies
   treesit-grammars,
   # Special
@@ -47,13 +44,13 @@
 melpaBuild {
 
   pname = "thattem-emacs-init";
-  version = "0-unstable-2026-07-03";
+  version = "0-unstable-2026-08-25";
 
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-emacs-init";
-    rev = "7e0b2eef72267690d65d2b8323560d51da6d047a";
-    hash = "sha256-PksF+ZKa9ZhHc66hH9s0nn9XgM8TnDNf+8aMSA3DGl4=";
+    rev = "fef83e1786c7b8ee80915f61e2ceb264832d8f5a";
+    hash = "sha256-6vh8dayKvi73eW+3s89QNJvIuqAMmdnLbIOYgTlkwDA=";
   };
 
   packageRequires = [
@@ -86,12 +83,9 @@ melpaBuild {
     thattem-tab-bar
     thattem-window-actions
     tramp
-    treesit-auto
     treesit-grammars.with-all-grammars
     undo-tree
-    verilog-ts-mode
     vertico-prescient
-    vhdl-ts-mode
   ];
 
   postPatch = ''
