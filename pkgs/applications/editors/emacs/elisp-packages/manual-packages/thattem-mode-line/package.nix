@@ -12,13 +12,13 @@
 melpaBuild {
 
   pname = "thattem-mode-line";
-  version = "0-unstable-2026-08-25";
+  version = "0-unstable-2026-09-24";
 
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-mode-line";
-    rev = "1088185dfec23062aa20b2dfc8b23cd3f7e35fb2";
-    hash = "sha256-5EF6K2+x2C1QReOTQwPvBgabB6MzFrGZ8t9WAdUNNfU=";
+    rev = "3c45cf5095395a76730d5f44c7b3bac82b7a7356";
+    hash = "sha256-WHy5GehyUNCI5qgSVtNxNV1SdQKgtyS5aB9KPKZ33oY=";
   };
 
   packageRequires = [
