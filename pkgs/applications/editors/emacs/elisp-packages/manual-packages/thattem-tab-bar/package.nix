@@ -17,8 +17,8 @@ melpaBuild {
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-tab-bar";
-    rev = "8a9fa736a9f0f52a291ee7ffad8aa1b1f6dc0543";
-    hash = "sha256-XfNstlOgggcwZtiyYeeOWToKZpE5pgRUGRXHvriR0FI=";
+    rev = "06aad7a89a60e04e1d82983ff432f6f932140337";
+    hash = "sha256-RG7dGdlDjy/sPC82hf5dMJrYTsEB7c0Si0uxyA45s+E=";
   };
 
   packageRequires = [
@@ -26,7 +26,7 @@ melpaBuild {
   ];
 
   postPatch = ''
-    substituteInPlace thattem-tab-bar-new-items.el \
+    substituteInPlace thattem-tab-bar-special-items.el \
       --replace-fail "\"/usr/local/lib/libthattem_emacs_library.so\"" \
                      "\"${lib.getLib thattem-emacs-library}/lib/libthattem_emacs_library.so\""
   '';
