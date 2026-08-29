@@ -16,7 +16,6 @@
   fennel-mode,
   fish-completion,
   forge,
-  gptel-agent,
   haskell-ts-mode,
   kotlin-ts-mode,
   marginalia,
@@ -24,9 +23,9 @@
   nerd-icons-dired,
   nix-ts-mode,
   nixfmt,
+  orderless,
   package-lint,
   rainbow-delimiters,
-  rime,
   sdcv,
   tempel-collection,
   thattem-modus-themes,
@@ -44,13 +43,13 @@
 melpaBuild {
 
   pname = "thattem-emacs-init";
-  version = "0-unstable-2026-08-27";
+  version = "0-unstable-2026-08-29";
 
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "thattem-emacs-init";
-    rev = "d5c524e2378d79ec448864961e9eedcf963e0906";
-    hash = "sha256-nnjEKWK2919SJL3KSqj6TuHq2Gd4yOrtVbyG2l553P4=";
+    rev = "451875e2b75a91b3f98860660920be743ee67b5b";
+    hash = "sha256-AVauJPCbHU6aank4hOgJVpda7uXm4/kIhDA8HU+f3X4=";
   };
 
   packageRequires = [
@@ -66,7 +65,6 @@ melpaBuild {
     fennel-mode
     fish-completion
     forge
-    gptel-agent
     haskell-ts-mode
     kotlin-ts-mode
     marginalia
@@ -74,9 +72,9 @@ melpaBuild {
     nerd-icons-dired
     nix-ts-mode
     nixfmt
+    orderless
     package-lint
     rainbow-delimiters
-    rime
     sdcv
     tempel-collection
     thattem-modus-themes
