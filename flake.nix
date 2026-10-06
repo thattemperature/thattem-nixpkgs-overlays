@@ -14,6 +14,7 @@
             by-name
             emacs-packages
             gnome-extensions
+            python-modules
             workarounds
           ]
         );
@@ -23,6 +24,8 @@
         emacs-packages = import ./pkgs/top-level/emacs-packages-overlay.nix ./pkgs/applications/editors/emacs/elisp-packages/manual-packages.nix;
 
         gnome-extensions = import ./pkgs/top-level/gnome-extensions-overlay.nix ./pkgs/desktops/gnome/extensions/manuallyPackaged.nix;
+
+        python-modules = import ./pkgs/top-level/python-packages.nix;
 
         workarounds = import ./pkgs/top-level (import ./workarounds);
 
