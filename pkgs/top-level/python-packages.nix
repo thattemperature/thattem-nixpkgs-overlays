@@ -1,12 +1,15 @@
+baseDirectory:
+
+packageList:
+
 self: super: {
 
   pythonPackagesExtensions = super.pythonPackagesExtensions ++ [
     (
-      python-self: python-super: with python-self; {
-
-        honcho-ai = python-super.honcho-ai or (callPackage ../development/python-modules/honcho-ai { });
-
-      }
+      python-self: python-super:
+      super.lib.genAttrs packageList (
+        package: python-super."${package}" or (python-self.callPackage (baseDirectory + "/${package}") { })
+      )
     )
   ];
 
