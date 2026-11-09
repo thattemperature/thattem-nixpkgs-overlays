@@ -7,13 +7,13 @@
 
 stdenvNoCC.mkDerivation {
   pname = "gnome-shell-extension-thattem-open-bar";
-  version = "42-unstable-2026-10-24";
+  version = "0-unstable-2026-11-09";
 
   src = fetchFromGitHub {
     owner = "thattemperature-fork";
     repo = "openbar";
-    rev = "c143f9b61f7536c8ac15fc5827d3e86f35fe5848";
-    hash = "sha256-d9/DJTRUWSqlQ6MhGMRCOhoYApoMUYGQObbwejlIpe4=";
+    rev = "35a59247b2383be85b68ff30a025758dd0c83daf";
+    hash = "sha256-YZMJhwDv/oWbAyW8nBs6r5+UQYxF/hw3JSeUCDX5WGw=";
   };
 
   sourceRoot = "source/openbar@neuromorph";
