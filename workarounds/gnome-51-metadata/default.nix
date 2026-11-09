@@ -9,11 +9,13 @@ final: prev:
   gnomeExtensions = prev.gnomeExtensions // {
 
     top-bar-organizer = prev.gnomeExtensions.top-bar-organizer.overrideAttrs (old: {
-      patches = (old.patches or [ ]) ++ [ ./gnome-51.patch ];
+      patches = prev.lib.unique ((old.patches or [ ]) ++ [ ./gnome-51.patch ]);
+
     });
 
     transparent-window-moving = prev.gnomeExtensions.transparent-window-moving.overrideAttrs (old: {
-      patches = (old.patches or [ ]) ++ [ ./gnome-51.patch ];
+      patches = prev.lib.unique ((old.patches or [ ]) ++ [ ./gnome-51.patch ]);
+
     });
 
   };
