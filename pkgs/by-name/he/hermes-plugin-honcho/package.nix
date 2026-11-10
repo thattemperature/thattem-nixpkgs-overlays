@@ -7,13 +7,13 @@
 stdenvNoCC.mkDerivation rec {
 
   pname = "hermes-plugin-honcho";
-  version = "3.4.0";
+  version = "3.6.0";
 
   src = fetchFromGitHub {
     owner = "plastic-labs";
     repo = "honcho";
     rev = "v${version}";
-    hash = "sha256-pTYjdm+ke5ELSlCiQsvFiV55GWrALRDN1tWT7eT7vek=";
+    hash = "sha256-vmBzsZX+R5AL7arjf93g4NVCAZ6XFFXBgYE1BWO+rLI=";
   };
 
   strictDeps = true;
