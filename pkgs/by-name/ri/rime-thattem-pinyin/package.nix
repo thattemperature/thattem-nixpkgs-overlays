@@ -7,13 +7,13 @@
 stdenvNoCC.mkDerivation {
 
   pname = "rime-thattem-pinyin";
-  version = "0-unstable-2026-07-06";
+  version = "0-unstable-2026-11-12";
 
   src = fetchFromGitHub {
     owner = "thattemperature";
     repo = "rime-thattem-pinyin";
-    rev = "4af6584c34b147f227fd3fe28c7a95baabcae96a";
-    hash = "sha256-vX5w26m0AI01NfrZdwr96TrIT0uIMTvM3t3eRM6YbOM=";
+    rev = "968a7617568d0fea2b28fc252b11397975125f11";
+    hash = "sha256-kVTzPP2oJjTmnM0E3aOWwQvmCwFNU8IhHFvEviUGQzo=";
   };
 
   strictDeps = true;
