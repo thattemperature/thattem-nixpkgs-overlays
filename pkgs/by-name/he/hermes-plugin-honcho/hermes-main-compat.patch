@@ -1,0 +1,34 @@
+--- a/__init__.py
++++ b/__init__.py
+@@ -20,7 +20,10 @@
+ from agent.memory_manager import sanitize_context
+ from agent.memory_provider import MemoryProvider, is_trivial_prompt
+ from agent.coding_context import INTERACTIVE_CODING_PLATFORMS as _LOCAL_PLATFORMS
+-from agent.skill_commands import extract_user_instruction_from_skill_message
++try:
++    from session_rules.turns import extract_user_instruction_from_skill_message
++except ImportError:  # Hermes before the session-rules extraction.
++    from agent.skill_commands import extract_user_instruction_from_skill_message
+ from agent.turn_author import a2a_key
+ from .attribution import HONCHO_APP_URL, attribution_url
+ from .cli import ConfigWriteRefused, clone_honcho_for_profile, migrate_profile_host
+--- a/client.py
++++ b/client.py
+@@ -31,7 +31,6 @@
+ from agent.secret_scope import get_secret
+ from hermes_cli.profiles import _get_default_hermes_home
+ from hermes_constants import get_hermes_home
+-from hermes_state_common import TITLE_SOURCE_DERIVED, TITLE_SOURCE_LLM
+ 
+ from .attribution import HONCHO_APP_URL, attribution_url
+ from .client_cache import (
+@@ -46,7 +45,8 @@
+ 
+ HOST = "hermes"
+ PLUGIN = "hermes-plugin-honcho"
+-_AUTOMATIC_SESSION_TITLE_SOURCES = frozenset({TITLE_SOURCE_DERIVED, TITLE_SOURCE_LLM})
++# These title-source values are data, not a dependency on Hermes storage internals.
++_AUTOMATIC_SESSION_TITLE_SOURCES = frozenset({"derived", "llm"})
+ 
+ 
+ def _sanitize_url(url: str | None) -> str | None:

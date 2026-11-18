@@ -21,6 +21,10 @@ stdenvNoCC.mkDerivation rec {
 
   sourceRoot = "source/hermes-plugin-honcho";
 
+  # Compatibility with Hermes's session-rules/storage refactor; remove once fixed upstream.
+  # https://github.com/plastic-labs/honcho/issues/1615
+  patches = [ ./hermes-main-compat.patch ];
+
   installPhase = ''
     runHook preInstall
 
